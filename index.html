@@ -6,6 +6,60 @@
     <title>Tablas y Formularios</title>
 </head>
 <body>
-    
+    <h1>Tablas y formularios</h1>
+    <h2>Tablas</h2>
+    <table border="1px"  >
+        <tr>
+            <th>Nombre</th>
+            <th>Apellido</th>
+            <th>Correo</th>
+        </tr>
+        <tr>
+            <td>Alberto</td>
+            <td>Martínez</td>
+            <td>magj91216</td>
+        </tr>
+        <tr>
+            <td>Jesus</td>
+            <td>Garcia</td>
+            <td>chuchoipn2007</td>
+        </tr>
+
+
+    </table>
+<br>
+    <hr>
+
+    <h2>Formularios</h2>
+
+    <form action="archivo_queprocesa_datos.php">
+        <!--Atributos aceptados por input de text:placeholder, value, required, disabled, name-->
+        <label for="nombre_de_usario">Nombre:</label>
+        <input name="nombre_de_usario"type="text" placeholder="Escribe tu nombre" required>
+<br>
+        <label for="correo">Email:</label>
+        <input name="correo"type="Email" placeholder="e-mail" required>
+<br>
+        <label for="password">Password:</label>
+        <input name="password"type="password" placeholder="Escribe tu contraseña" required>
+        
+        <br><br>
+
+        <label for="comentarios">Comentarios</label>
+        <br>
+        <!--textarea-->
+        <textarea name="comentarios" rows="8" cols="50" ></textarea>
+        <br><br>
+        <!--Select-->
+        <label for="sabores">sabores</label>
+        <select name="sabores" >
+            <option value="Vainilla">Vainilla</option>
+            <option value="Fresa">Fresa </option>
+            <option value="Chocolate">Chocolate</option>
+
+        </select>
+
+        
+    </form>
 </body>
 </html>
